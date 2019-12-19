@@ -4,4 +4,4 @@ Extremely barebones web UI to convert username and password to valid Authenticat
 
 ### Usage
 
-Visit https://auth-header-formatter.surge.sh/
+Visit https://lighthouse-auth-formatter.surge.sh/
