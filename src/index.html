@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+        <meta name="description" content="Extremely barebones web UI to convert username and password to valid Authentication headers for the Lighthouse">
+        <title>Lighthouse Auth Formatter</title>
+
+        <style>
+            .noscript {
+                font-size: 22px;
+                color: red;
+                padding: 1rem;
+            }
+
+            button {
+                font-size: 22px;
+                align-self: center;
+                margin-right: 1rem;
+                padding: 0.5rem;
+            }
+
+            p {
+                font-size: 24px;
+                font-family: Helvetica, sans-serif;
+                padding-right: 1rem;
+            }
+
+            main, header {
+                display: flex;
+            }
+
+            div {
+                display: flex;
+                flex-direction: column;
+            }
+
+            input {
+                height: 20vh;
+                width: 40vw;
+            }
+
+            textarea {
+                height: 100vh;
+                width: 50vw;
+            }
+        </style>
+    </head>
+    <body>
+        <noscript class="noscript">
+            You must enable JavaScript to use this application.
+        </noscript>
+
+        <header>
+            <button>
+                Submit
+            </button>
+            <p>
+                Extremely barebones web UI to convert username and password to valid Authentication headers for the Lighthouse
+            </p>
+        </header>
+
+        <main>
+            <div>
+                <input id="username" placeholder="Username" />
+                <input id="password" placeholder="Password" />
+            </div>
+            <textarea id="output" placeholder="Output will appear here"></textarea>
+        </main>
+
+        <script type="text/javascript">
+            document.addEventListener('DOMContentLoaded', function () {
+                var button = document.querySelector('button');
+                var username = document.getElementById('username');
+                var password = document.getElementById('password');
+                var output = document.getElementById('output')
+
+                button.addEventListener('click', function () {
+                    output.value = `--view --extra-headers="{\\"Authorization\\":\\"${btoa(`${username.value}:${password.value}`)}\\"}"`;
+                });
+            });
+        </script>
+    </body>
+</html>
