@@ -76,7 +76,7 @@
                 var output = document.getElementById('output')
 
                 button.addEventListener('click', function () {
-                    output.value = `--view --extra-headers="{\\"Authorization\\":\\"${btoa(`${username.value}:${password.value}`)}\\"}"`;
+                    output.value = `--extra-headers="{\\"Authorization\\":\\"${btoa(`${username.value}:${password.value}`)}\\"}"`;
                 });
             });
         </script>

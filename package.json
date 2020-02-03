@@ -1,7 +1,7 @@
 {
   "name": "@intouchgroup/lighthouse-auth-formatter",
-  "version": "1.0.0",
-  "description": "Extremely barebones web UI to convert username and password to valid Authentication headers for the Lighthouse",
+  "version": "2.0.0",
+  "description": "Convert username and password to valid Authentication headers for Lighthouse Batch",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
