@@ -1,6 +1,6 @@
 {
   "name": "@intouchgroup/lighthouse-auth-formatter",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Convert username and password to valid Authentication headers for Lighthouse Batch",
   "main": "index.html",
   "scripts": {
