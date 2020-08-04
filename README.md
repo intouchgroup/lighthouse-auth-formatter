@@ -4,4 +4,4 @@ Convert username and password to valid Authentication headers for  Lighthouse Ba
 
 ### Usage
 
-Visit https://lighthouse-auth-formatter.surge.sh/
+Visit https://seo.intouchg.co/lighthouse-auth-formatter/
